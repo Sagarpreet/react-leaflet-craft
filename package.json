@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/Sagarpreet/react-leaflet-craft"
   },
-  "author": "Elango Bharathi Dhandapani",
+  "author": "Elango Bharathi Dhandapani | Sagarpreet Chadha",
   "license": "MIT",
   "peerDependencies": {
     "leaflet": "^1.3.3",
