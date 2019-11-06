@@ -4,6 +4,7 @@ import { Map, TileLayer } from 'react-leaflet';
 import Freedraw, { CREATE, EDIT, DELETE, APPEND, ALL } from '../Freedraw';
 import CheckboxContainer from './Checkboxes';
 
+
 class Example extends Component {
   state = {
     controls: [
@@ -105,12 +106,6 @@ class Example extends Component {
             ref={this.freedrawRef}
           />
         </Map>
-        <div className="checkboxContainer">
-          <CheckboxContainer
-            checkboxes={this.state.controls}
-            onChange={this.handleOptionsChange}
-          />
-        </div>
       </div>
     );
   }
