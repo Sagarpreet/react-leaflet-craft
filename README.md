@@ -1,5 +1,4 @@
-https://badge.fury.io/js/react-leaflet-craft.svg
-
+[![npm version](https://badge.fury.io/js/react-leaflet-craft.svg)](https://badge.fury.io/js/react-leaflet-craft)
 # react-leaflet-craft
 
 React component built on top of [react-leaflet](https://github.com/PaulLeCam/react-leaflet) that integrates [Leaflet-Craft](https://github.com/sagarpreet-chadha/Leaflet-Craft) library.
