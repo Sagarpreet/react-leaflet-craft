@@ -1,7 +1,7 @@
 {
-  "name": "react-leaflet-freedraw",
-  "version": "0.1.3",
-  "description": "React Component for freedraw",
+  "name": "react-leaflet-craft",
+  "version": "1.0.0",
+  "description": "React Component for leaflet-craft",
   "main": "Freedraw.js",
   "scripts": {
     "start": "babel Freedraw.jsx > Freedraw.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elangobharathi/react-leaflet-freedraw.git"
+    "url": "https://github.com/Sagarpreet/react-leaflet-craft"
   },
   "author": "Elango Bharathi Dhandapani",
   "license": "MIT",
   "peerDependencies": {
     "leaflet": "^1.3.3",
-    "leaflet-freedraw": "^2.9.0",
+    "leaflet-craft": "^1.0.0",
     "ramda": "^0.25.0",
     "react-leaflet": "^2.0.1",
     "react": "^16.4.2",
@@ -30,7 +30,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "leaflet": "^1.3.3",
-    "leaflet-freedraw": "^2.9.0",
+    "leaflet-craft": "^1.0.0",
     "ramda": "^0.25.0",
     "react-leaflet": "^2.0.1",
     "react": "^16.4.2",

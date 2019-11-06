@@ -24,7 +24,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _leafletFreedraw2 = _interopRequireDefault(_leafletFreedraw);
+var _leafletCraft = require('leaflet-craft');
+
+var _leafletCraft2 = _interopRequireDefault(_leafletCraft);
 
 var _reactLeaflet = require('react-leaflet');
 
@@ -48,7 +50,7 @@ var Freedraw = function (_MapLayer) {
   _createClass(Freedraw, [{
     key: 'createLeafletElement',
     value: function createLeafletElement(props) {
-      return new _leafletFreedraw2.default(_extends({}, props));
+      return new _leafletCraft2.default(_extends({}, props));
     }
   }, {
     key: 'updateLeafletElement',
@@ -61,14 +63,13 @@ var Freedraw = function (_MapLayer) {
       var map = this.props.leaflet.map;
 
       map.addLayer(this.leafletElement);
-      this.attachEvents();
     }
-  }, {
-    key: 'attachEvents',
-    value: function attachEvents() {
-      this.leafletElement.on('markers', this.props.onMarkers);
-      this.leafletElement.on('mode', this.props.onModeChange);
-    }
+
+    // attachEvents() {
+    //   this.leafletElement.on('markers', this.props.onMarkers);
+    //   this.leafletElement.on('mode', this.props.onModeChange);
+    // }
+
   }, {
     key: 'render',
     value: function render() {

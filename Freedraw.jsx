@@ -1,5 +1,5 @@
 import React from 'react';
-import LeafletFreedraw from 'leaflet-freedraw';
+import LeafletFreedraw from 'leaflet-craft';
 import { MapLayer, withLeaflet } from 'react-leaflet';
 
 class Freedraw extends MapLayer {
@@ -14,13 +14,12 @@ class Freedraw extends MapLayer {
   componentDidMount() {
     const { map } = this.props.leaflet;
     map.addLayer(this.leafletElement);
-    this.attachEvents();
   }
 
-  attachEvents() {
-    this.leafletElement.on('markers', this.props.onMarkers);
-    this.leafletElement.on('mode', this.props.onModeChange);
-  }
+  // attachEvents() {
+  //   this.leafletElement.on('markers', this.props.onMarkers);
+  //   this.leafletElement.on('mode', this.props.onModeChange);
+  // }
 
   render() {
     return null;
