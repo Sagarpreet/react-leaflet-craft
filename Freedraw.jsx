@@ -28,4 +28,4 @@ class Freedraw extends MapLayer {
 
 export default withLeaflet(Freedraw);
 
-export * from 'leaflet-freedraw';
+export * from 'leaflet-craft';

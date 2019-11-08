@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-craft",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React Component for leaflet-craft",
   "main": "Freedraw.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/Sagarpreet/react-leaflet-craft"
   },
-  "author": "Elango Bharathi Dhandapani | Sagarpreet Chadha",
+  "author": "Sagarpreet Chadha",
   "license": "MIT",
   "peerDependencies": {
     "leaflet": "^1.3.3",

@@ -8,12 +8,21 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _leafletCraft = require('leaflet-craft');
+
+Object.keys(_leafletCraft).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _leafletCraft[key];
+    }
+  });
+});
 
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
-
-var _leafletCraft = require('leaflet-craft');
 
 var _leafletCraft2 = _interopRequireDefault(_leafletCraft);
 
