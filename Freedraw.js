@@ -53,15 +53,13 @@ var Freedraw = function (_MapLayer) {
   }, {
     key: 'updateLeafletElement',
     value: function updateLeafletElement(fromProps, toProps) {
-      var map = toProps.leaflet.map;
-
 
       if (fromProps.showUndoRedoBar !== toProps.showUndoRedoBar) {
-        (0, _leafletCraft.toggleUndoRedoBar)(toProps.showUndoRedoBar, map);
+        this.leafletElement.toggleUndoRedoBar(toProps.showUndoRedoBar);
       }
 
       if (fromProps.showControlBar !== toProps.showControlBar) {
-        (0, _leafletCraft.toggleControlBar)(toProps.showControlBar, map);
+        this.leafletElement.toggleControlBar(toProps.showControlBar);
       }
 
       // this.leafletElement.mode(toProps.mode);

@@ -3403,10 +3403,10 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-leaflet-craft@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/leaflet-craft/-/leaflet-craft-1.0.0.tgz#2ea66d1fab016e4c4de7ff1e6266c4247ec801d6"
-  integrity sha512-A/rwNc8nJ7dPqSMQXFGFZNSXVDbI9syH8GGiSYdPLkzol+lp3h9TX99kOZjTWZ85JpKSi04OmomduC81UBRKlA==
+leaflet-craft@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/leaflet-craft/-/leaflet-craft-1.0.2.tgz#3fe7f01b17311cc126d6b45189eafd0ba0553ef4"
+  integrity sha512-JdpfVAC5mctN9u0W54gVoqYyMwO81ABj1+2DFvTX2UPT4IFU6wAnflem2I1LBIxpQYoOxnMJWdUni9ba3tsomA==
   dependencies:
     "@turf/area" "6.0.1"
     "@turf/helpers" "6.1.4"

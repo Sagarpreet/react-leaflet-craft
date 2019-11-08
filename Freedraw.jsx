@@ -9,14 +9,12 @@ class Freedraw extends MapLayer {
 
   updateLeafletElement(fromProps, toProps) {
 
-    const {map} = toProps.leaflet;
-
     if(fromProps.showUndoRedoBar !== toProps.showUndoRedoBar) {
-      toggleUndoRedoBar(toProps.showUndoRedoBar, map);
+      this.leafletElement.toggleUndoRedoBar(toProps.showUndoRedoBar);
     } 
 
     if(fromProps.showControlBar !== toProps.showControlBar) {
-      toggleControlBar(toProps.showControlBar, map);
+      this.leafletElement.toggleControlBar(toProps.showControlBar);
     }
 
     // this.leafletElement.mode(toProps.mode);
