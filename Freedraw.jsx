@@ -1,5 +1,5 @@
 import React from 'react';
-import LeafletFreedraw from 'leaflet-craft';
+import LeafletFreedraw, {clickUndo, clickRedo, toggleControlBar, toggleUndoRedoBar} from 'leaflet-craft';
 import { MapLayer, withLeaflet } from 'react-leaflet';
 
 class Freedraw extends MapLayer {
@@ -8,7 +8,18 @@ class Freedraw extends MapLayer {
   }
 
   updateLeafletElement(fromProps, toProps) {
-    this.leafletElement.mode(toProps.mode);
+
+    const {map} = toProps.leaflet;
+
+    if(fromProps.showUndoRedoBar !== toProps.showUndoRedoBar) {
+      toggleUndoRedoBar(toProps.showUndoRedoBar, map);
+    } 
+
+    if(fromProps.showControlBar !== toProps.showControlBar) {
+      toggleControlBar(toProps.showControlBar, map);
+    }
+
+    // this.leafletElement.mode(toProps.mode);
   }
 
   componentDidMount() {
