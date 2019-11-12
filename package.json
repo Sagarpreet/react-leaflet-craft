@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-craft",
-  "version": "1.0.4",
+  "version": "1.0.14",
   "description": "React Component for leaflet-craft",
   "main": "Freedraw.js",
   "scripts": {
